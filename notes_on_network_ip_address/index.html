@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Network IP Address</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <h1 id="output"></h1>
+        
+        <script type="text/javascript">
+            "use strict";
+            
+            (function main() {
+                
+                onNetworkIpAddressFound((ipAddress) => {
+                    document.querySelector("#output").innerHTML = ipAddress;
+                });
+                
+            }) ();
+        </script>
+    </body>
+</html>
